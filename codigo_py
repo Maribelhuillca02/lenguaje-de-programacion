@@ -1,0 +1,39 @@
+def ordenar_por_codigo(cod, dni_a, nom_a, 
+
+                       dni_e, nom_e, tram, fec, n): 
+
+ 
+
+    for i in range(n - 1): 
+
+ 
+
+        for j in range(n - 1 - i): 
+
+ 
+
+            if cod[j] > cod[j + 1]: 
+
+ 
+
+                cod[j], cod[j + 1] = cod[j + 1], cod[j] 
+
+                dni_a[j], dni_a[j + 1] = dni_a[j + 1], dni_a[j] 
+
+                nom_a[j], nom_a[j + 1] = nom_a[j + 1], nom_a[j] 
+
+                dni_e[j], dni_e[j + 1] = dni_e[j + 1], dni_e[j] 
+
+                nom_e[j], nom_e[j + 1] = nom_e[j + 1], nom_e[j] 
+
+                tram[j], tram[j + 1] = tram[j + 1], tram[j] 
+
+                fec[j], fec[j + 1] = fec[j + 1], fec[j] 
+
+ 
+
+    print("Expedientes ordenados correctamente.") 
+
+ 
+
+ 
